@@ -8,3 +8,4 @@ jobs:
       - name: Setup DDEV
         uses: ddev/github-action-setup-ddev@v1
       - run: ./scripts/deploy.sh
+      - run: ./scripts/test.sh
