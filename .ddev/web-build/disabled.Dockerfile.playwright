@@ -3,6 +3,7 @@
 # the build.
 RUN mv /etc/apt/apt.conf.d/docker-clean /etc/apt/docker-clean-disabled
 
+# https://github.com/Lullabot/ddev-playwright/issues/75
 RUN apt-get update
 
 # Install Playwright browsers and system dependencies.
