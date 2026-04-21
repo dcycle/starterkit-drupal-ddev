@@ -1,0 +1,12 @@
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup DDEV
+        uses: ddev/github-action-setup-ddev@v1
+      - run: ./scripts/deploy.sh
+      - run: ddev install-playwright
+      - run: ddev playwright test
