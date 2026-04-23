@@ -9,4 +9,4 @@ jobs:
         uses: ddev/github-action-setup-ddev@v1
       - run: ./scripts/deploy.sh
       - run: ddev install-playwright
-      - run: ddev playwright test
+      - run: ./scripts/playwright-test.sh

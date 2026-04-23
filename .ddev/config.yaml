@@ -12,7 +12,8 @@ database:
 performance_mode: mutagen
 use_dns_when_possible: true
 composer_version: "2"
-web_environment: []
+web_environment:
+    - MY_ENV_VAR=someval
 corepack_enable: true
 
 # Key features of DDEV's config.yaml:
