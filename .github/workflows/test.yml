@@ -8,5 +8,4 @@ jobs:
       - name: Setup DDEV
         uses: ddev/github-action-setup-ddev@v1
       - run: ./scripts/deploy.sh
-      - run: ddev install-playwright
       - run: ./scripts/playwright-test.sh
